@@ -344,7 +344,7 @@
         </div>
         <div class="home-buttons1">
           <a
-            href="https://www.roblox.com/users/1296091692/profile"
+            href="https://github.com/JustDeveloper1/justdeveloper1.github.io"
             target="_blank"
             rel="noreferrer noopener"
             class="home-link4"
@@ -365,15 +365,21 @@
 
     function activate() {
       something = setTimeout(showPage, 3000);
-    }
+    };
 
     function showPage() {
       document.getElementById("loader").style.display = "none";
       document.getElementById("loaderbg").style.display = "none";
       document.getElementById("content").style.display = "block";
-    }
+    };
 
-    activate()
+    activate();
+
+    function clickHandler(){
+      window.close();
+    };
+    var element = document.getElementById('close');
+    element.addEventListener('click', clickHandler);
     </script>
   </body>
 </html>
