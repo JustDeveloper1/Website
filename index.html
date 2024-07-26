@@ -225,7 +225,7 @@
                     <br />
                   </h1>
                   <div class="home-langs">
-                    <div class="home-lua transition-debug">
+                    <div class="home-lua transition-debug" id="cbtn1">
                       <span class="home-name01">
                         <span>Lua</span>
                         <br />
@@ -236,7 +236,7 @@
                         class="home-logo03"
                       />
                     </div>
-                    <div class="home-luau transition-debug">
+                    <div class="home-luau transition-debug" id="cbtn2">
                       <span class="home-name02">
                         <span>Luau</span>
                         <br />
@@ -247,7 +247,7 @@
                         class="home-logo04"
                       />
                     </div>
-                    <div class="home-html transition-debug">
+                    <div class="home-html transition-debug" id="cbtn3">
                       <span class="home-name03">
                         <span>HTML</span>
                         <br />
@@ -258,7 +258,7 @@
                         class="home-logo05"
                       />
                     </div>
-                    <div class="home-css transition-debug">
+                    <div class="home-css transition-debug" id="cbtn4">
                       <span class="home-name04">
                         <span>CSS</span>
                         <br />
@@ -269,7 +269,7 @@
                         class="home-logo06"
                       />
                     </div>
-                    <div class="home-java-script transition-debug">
+                    <div class="home-java-script transition-debug" id="cbtn5">
                       <span class="home-name05">
                         <span>JavaScript</span>
                         <br />
@@ -288,7 +288,7 @@
                     <br />
                   </h1>
                   <div class="home-sklls">
-                    <div class="home-scripting transition-debug">
+                    <div class="home-scripting transition-debug" id="cbtn6">
                       <span class="home-name06">
                         <span>Scripting</span>
                         <br />
@@ -299,7 +299,7 @@
                         class="home-logo08"
                       />
                     </div>
-                    <div class="home-gui transition-debug">
+                    <div class="home-gui transition-debug" id="cbtn7">
                       <span class="home-name07">
                         <span>UI Design</span>
                         <br />
@@ -310,7 +310,7 @@
                         class="home-logo09"
                       />
                     </div>
-                    <div class="home-ru transition-debug">
+                    <div class="home-ru transition-debug" id="cbtn">
                       <span class="home-desc">
                         <span>EN to RU</span>
                         <br />
@@ -325,7 +325,7 @@
                         class="home-logo10"
                       />
                     </div>
-                    <div class="home-building transition-debug">
+                    <div class="home-building transition-debug" id="cbtn">
                       <span class="home-name09">
                         <span>Building</span>
                         <br />
@@ -392,168 +392,19 @@
 
 
       //confetti
-      var mouseX = 0;
-var mouseY = 0;
-function tellPos(p){
-  mouseX = window.innerWidth / p.pageX;
-  mouseY = window.innerHeight / p.pageY;
-}
-addEventListener('mousemove', tellPos, false);
+      function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+      }
 
-function randomInRange(min, max) {
-  return Math.random() * (max - min) + min;
-}
-
-confetti({
-  angle: randomInRange(55, 125),
-  spread: randomInRange(50, 70),
-  particleCount: randomInRange(50, 100),
-  origin: { x: mouseX, y: mouseY },
-});
-      tsParticles.load({
-          id: "tsparticles",
-          options: {
-  "fullScreen": {
-    "zIndex": 1
-  },
-  "particles": {
-    "number": {
-      "value": 0
-    },
-    "color": {
-      "value": [
-        "#00FFFC",
-        "#FC00FF",
-        "#fffc00"
-      ]
-    },
-    "shape": {
-      "type": [
-        "circle",
-        "square",
-        "triangle",
-        "polygon"
-      ],
-      "options": {
-        "polygon": [
-          {
-            "sides": 5
-          },
-          {
-            "sides": 6
-          }
-        ]
-      }
-    },
-    "opacity": {
-      "value": {
-        "min": 0,
-        "max": 1
-      },
-      "animation": {
-        "enable": true,
-        "speed": 2,
-        "startValue": "max",
-        "destroy": "min"
-      }
-    },
-    "size": {
-      "value": {
-        "min": 2,
-        "max": 4
-      }
-    },
-    "links": {
-      "enable": false
-    },
-    "life": {
-      "duration": {
-        "sync": true,
-        "value": 5
-      },
-      "count": 1
-    },
-    "move": {
-      "enable": true,
-      "gravity": {
-        "enable": true,
-        "acceleration": 10
-      },
-      "speed": {
-        "min": 10,
-        "max": 20
-      },
-      "decay": 0.1,
-      "direction": "none",
-      "straight": false,
-      "outModes": {
-        "default": "destroy",
-        "top": "none"
-      }
-    },
-    "rotate": {
-      "value": {
-        "min": 0,
-        "max": 360
-      },
-      "direction": "random",
-      "move": true,
-      "animation": {
-        "enable": true,
-        "speed": 60
-      }
-    },
-    "tilt": {
-      "direction": "random",
-      "enable": true,
-      "move": true,
-      "value": {
-        "min": 0,
-        "max": 360
-      },
-      "animation": {
-        "enable": true,
-        "speed": 60
-      }
-    },
-    "roll": {
-      "darken": {
-        "enable": true,
-        "value": 25
-      },
-      "enable": true,
-      "speed": {
-        "min": 15,
-        "max": 25
-      }
-    },
-    "wobble": {
-      "distance": 30,
-      "enable": true,
-      "move": true,
-      "speed": {
-        "min": -15,
-        "max": 15
-      }
-    }
-  },
-  "emitters": {
-    "life": {
-      "count": 1,
-      "duration": 0.1,
-      "delay": 0.4
-    },
-    "rate": {
-      "delay": 0.1,
-      "quantity": 150
-    },
-    "size": {
-      "width": 0,
-      "height": 0
-    }
-  }
-}
+      function launchConfetti() {
+        confetti({
+        angle: randomInRange(55, 125),
+        spread: randomInRange(50, 70),
+        particleCount: randomInRange(50, 100),
+        origin: { y: 0.6 },
       });
+      }
+      document.getElementById('cbtn').addEventListener('click', launchConfetti);
     </script>
   </body>
 </html>
