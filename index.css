@@ -702,3 +702,6 @@
     display: none;
   }
 }
+.transition-debug {
+  transition-delay: 0ms;
+}
