@@ -118,6 +118,19 @@
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
     <script type="text/javascript">
+      let time = 0;
+
+      const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+      const run = async () => {
+          while (true) {
+              time += 1;
+              await wait(1000);
+          }
+      };
+
+      run();
+	    
       let title = document.title
       window.addEventListener('blur', () => {
           document.title = "🛠️JustDeveloper";
@@ -125,8 +138,10 @@
       window.addEventListener('focus', () => {
           document.title = title;
           setTimeout(() => {
-            window.location.href = window.location.href
-          }, 100);
+	    if (time >= 100) {
+       	         window.location.href = window.location.href;
+            }
+          }, 30);
       })
     </script>
     <style>
