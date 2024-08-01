@@ -712,4 +712,19 @@
   .hide-on-small-screen {
     display: none;
   }
+  .home-skills {
+    display: none;
+  }
+  .home-languages {
+    width: 100%; 
+    border-width: 0px;
+  }
+  .home-text {
+    font-size: 10px;
+  }
+}
+@media(max-width: 500px) {
+  .home-displayname {
+    font-size: 20px;
+  }
 }
