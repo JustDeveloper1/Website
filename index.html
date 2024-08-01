@@ -674,9 +674,11 @@ SOFTWARE.
 						  document.getElementById("bg-effect").style.display = "none";
 					  }
 					  document.body.style["pointer-events"] = "none"
+					  document.getElementById("fps").style.color = "rgb(255, 0, 0)"; document.getElementById("fps").style.opacity = "100%"; document.getElementById("fps").style["font-weight"] = "bold"; 
             			          removed++;
 					  setTimeout(() => {
-					    	document.body.style["pointer-events"] = "all"
+					    	document.body.style["pointer-events"] = "all";
+						  document.getElementById("fps").style.color = "rgb(255, 255, 255)"; document.getElementById("fps").style.opacity = "75%"; document.getElementById("fps").style["font-weight"] = "regular"
  				          }, 3000);
 				  }
 			      startTime = time;
