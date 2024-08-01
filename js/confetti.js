@@ -1,3 +1,10 @@
+/*
+
+Copyright (c) 2020 Matteo Bruni
+https://github.com/tsparticles/tsparticles?tab=MIT-1-ov-file
+
+*/
+
 ! function(t, e) {
     if ("object" == typeof exports && "object" == typeof module) module.exports = e();
     else if ("function" == typeof define && define.amd) define([], e);
