@@ -708,3 +708,8 @@
 .always-button {
   pointer-events: all;
 }
+@media(max-width: 430px) {
+  .hide-on-small-screen {
+    display: none;
+  }
+}
