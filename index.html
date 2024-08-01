@@ -156,12 +156,12 @@
   <body style="background-color: #000000;">
     <div id="loader"></div>
     <div id="loaderbg"></div>
-    <span id="fps" style="position: absolute; top: 100%; transform: translate(0%, -100%); color: #FFFFFF; opacity: 75%; margin-left: 5px; margin-bottom: 5px;">--.- FPS</span></div>
+    <span id="fps" style="position: absolute; top: 100%; transform: translate(0%, -100%); color: #FFFFFF; opacity: 75%; margin-left: 5px; margin-bottom: 5px; display: none;">--.- FPS</span></div>
     <link rel="stylesheet" href="./style.css" />
     <div id="content" style="-webkit-user-select: none; -ms-user-select: none; user-select: none;">
       <link href="./index.css" rel="stylesheet" />
       <div class="home-container">
-        <canvas style="opacity: 75%;"></canvas>
+        <canvas id="bg-effect" style="opacity: 75%;"></canvas>
         <div class="home-window-pos">
           <div class="home-window-max-size thq-flex-column">
             <div class="home-window">
@@ -412,52 +412,6 @@
       function noselect() {return false;}
     </script>
     <script>
-    var something;
-
-    function activate() {
-      something = setTimeout(showPage, 3000);
-    };
-
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("loaderbg").style.display = "none";
-      document.getElementById("content").style.display = "block";
-    };
-
-    activate();
-
-    function clickHandler(){
-      window.handler = self;
-      window.close();
-    };
-    var element = document.getElementById('close');
-    element.style.display = "none";
-    element.addEventListener('click', clickHandler);
-
-
-      function randomInRange(min, max) {
-        return Math.random() * (max - min) + min;
-      }
-
-      function launchConfetti() {
-        confetti({
-        angle: randomInRange(55, 125),
-        spread: randomInRange(50, 70),
-        particleCount: randomInRange(50, 100),
-        origin: { y: 1 },
-      });
-      }
-      document.getElementById('cbtn1').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn2').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn3').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn4').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn5').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn6').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn7').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn8').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn9').addEventListener('click', launchConfetti);
-    </script>
-    <script>
 	const STAR_COLOR = '#fff';
 	const STAR_SIZE = 3;
 	const STAR_MIN_SCALE = 0.2;
@@ -689,12 +643,60 @@
 			  frame++;
 			  if (time - startTime > 1000) {
 			      fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1) + ' FPS';
+				  console.log((frame / ((time - startTime) / 1000)).toFixed(1))
 			      startTime = time;
 			      frame = 0;
 				}
 				  window.requestAnimationFrame(tick);
 				}
 			tick();
+    </script>
+    <script>
+    var something;
+
+    function activate() {
+      something = setTimeout(showPage, 3000);
+    };
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("loaderbg").style.display = "none";
+      document.getElementById("content").style.display = "block";
+      document.getElementById("fps").style.display = "block";
+    };
+
+    activate();
+
+    function clickHandler(){
+      window.handler = self;
+      window.close();
+    };
+    var element = document.getElementById('close');
+    element.style.display = "none";
+    element.addEventListener('click', clickHandler);
+
+
+      function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      function launchConfetti() {
+        confetti({
+        angle: randomInRange(55, 125),
+        spread: randomInRange(50, 70),
+        particleCount: randomInRange(50, 100),
+        origin: { y: 1 },
+      });
+      }
+      document.getElementById('cbtn1').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn2').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn3').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn4').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn5').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn6').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn7').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn8').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn9').addEventListener('click', launchConfetti);
     </script>
   </body>
 </html>
