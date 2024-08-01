@@ -646,7 +646,8 @@
 			      fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1) + ' FPS';
 				  if ( (frame / ((time - startTime) / 1000)).toFixed(0) < 30 && removed == false ) {
 					  document.getElementById("bg-effect").style.display = "none";
-					  window.alert("Background stars removed: low fps.")
+					  window.alert("Background stars removed: low fps.");
+            			          removed = true;
 				  }
 			      startTime = time;
 			      frame = 0;
