@@ -32,6 +32,9 @@ Disallow: /img*
 Disallow: /CNAME
 Disallow: /LICENSE
 Disallow: /README.md
+Disallow: /cname
+Disallow: /license
+Disallow: /readme.md
 Disallow: /*.json$
 Disallow: /*.yml$
 
