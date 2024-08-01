@@ -640,11 +640,12 @@
 
 		function tick() {
 			  var time = Date.now();
+			  var removed = false;
 			  frame++;
 			  if (time - startTime > 1000) {
 			      fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1) + ' FPS';
-				  if ( (frame / ((time - startTime) / 1000)).toFixed(0) < 30 ) {
-					  document.getElementById("fps").style.display = "none";
+				  if ( (frame / ((time - startTime) / 1000)).toFixed(0) < 30 && removed == false ) {
+					  document.getElementById("bg-effect").style.display = "none";
 					  window.alert("Background stars removed: low fps.")
 				  }
 			      startTime = time;
