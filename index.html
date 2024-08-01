@@ -643,7 +643,10 @@
 			  frame++;
 			  if (time - startTime > 1000) {
 			      fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1) + ' FPS';
-				  console.log((frame / ((time - startTime) / 1000)).toFixed(1))
+				  if ( (frame / ((time - startTime) / 1000)).toFixed(0) < 30 ) {
+					  document.getElementById("fps").style.display = "none";
+					  window.alert("Background stars removed: low fps.")
+				  }
 			      startTime = time;
 			      frame = 0;
 				}
