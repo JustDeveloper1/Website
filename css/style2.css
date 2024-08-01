@@ -705,3 +705,6 @@
 .transition-debug {
   transition-delay: 0ms;
 }
+.always-button {
+  pointer-events: all;
+}
