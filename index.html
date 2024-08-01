@@ -374,7 +374,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" onclick="setTimeout(function(){var ww = window.open(window.location, '_self'); ww.close(); }, 1000);"><span id="close" class="home-close" style="cursor:pointer;">x</span></a>
+<!--              <a href="#" onclick="setTimeout(function(){var ww = window.open(window.location, '_self'); ww.close(); }, 1000);"><span id="close" class="home-close" style="cursor:pointer;">x</span></a>		-->
             </div>
           </div>
         </div>
@@ -640,14 +640,19 @@
 
 		function tick() {
 			  var time = Date.now();
-			  var removed = false;
+			  var removed = 0;
 			  frame++;
 			  if (time - startTime > 1000) {
 			      fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1) + ' FPS';
-				  if ( (frame / ((time - startTime) / 1000)).toFixed(0) < 30 && removed == false ) {
-					  document.getElementById("bg-effect").style.display = "none";
-					  window.alert("Background stars removed: low fps.");
-            			          removed = true;
+				  if ( (frame / ((time - startTime) / 1000)).toFixed(0) < 30 ) {
+					  if ( removed > 2 ) {
+						  document.getElementById("bg-effect").style.display = "none";
+					  }
+					  document.body.style["pointer-events"] = "none"
+            			          removed++;
+					  setTimeout(() => {
+					    	document.body.style["pointer-events"] = "all"
+ 				          }, 3000);
 				  }
 			      startTime = time;
 			      frame = 0;
