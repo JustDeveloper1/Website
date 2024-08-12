@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JustDeveloper</title>
+    <script>
+        window.location.href = "https://justdeveloper.is-a.dev/"
+    </script>
+</head>
+<body>
+    <p>https://justdeveloper.is-a.dev/</p>
+    <p>click ↑↑↑</p>
+    <p>---</p>
+    <p>ru:</p>
+    <p>Ты зачем без джаваскрипта сюда полез?</p>
+    <p>Хочешь секретную информацию?</p>
+    <p>Ну ладно, держи:</p>
+    <p>ПИКСЕТ ЛОХ</p>
+</body>
+</html>
