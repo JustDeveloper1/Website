@@ -195,6 +195,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   <body style="background-color: #000000;">
     <div id="loader"></div>
     <div id="loaderbg"></div>
+	  <div class="a"></div>
     <noscript>
 	    <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(111%) rotateZ(2deg); color: #FFFFFF; z-index: 1000001; padding: 2px; background-color: rgba(0,0,0,0.33); border-radius: 5px; border-style: solid; border-width: 2px; border-color: #FFFFFF; backdrop-filter: blur(4px); box-shadow: 2px 2px 5px 0px #FFFFFF;">
 		    You need to enable JavaScript in your browser settings to access this website.
@@ -428,7 +429,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
             </div>
           </div>
         </div>
-        <div class="home-buttons1">
+        <div class="home-buttons1" style="z-index:4;">
           <a
             href="https://github.com/JustDeveloper1/justdeveloper1.github.io"
             target="_blank"
@@ -717,7 +718,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     var something;
 
     function activate() {
-      something = setTimeout(showPage, 3000);
+      something = setTimeout(showPage, 2500);
     };
 
     function showPage() {/*
@@ -726,6 +727,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
       document.getElementById("content").style.display = "block";
       document.getElementById("fps").style.display = "block";
       document.getElementById("loader").style.opacity = 0;
+      /*document.getElementById("loaderbg").style.opacity = 0;*/
+	    otherthng = setTimeout(showPage02, 500);
+    };
+    function showPage02() {
       document.getElementById("loaderbg").style.opacity = 0;
 	    otherthng = setTimeout(activatePage, 500);
     };
