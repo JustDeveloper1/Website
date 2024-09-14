@@ -728,3 +728,24 @@
     font-size: 20px;
   }
 }
+
+.window-rbp-button-t1 {
+  display: all;
+}
+.window-rbp-button-t2 {
+  display: none;
+}
+@media(max-width: 372px) {
+  .window-rbp-button-t1 {
+    display: none;
+  }
+  .window-rbp-button-t2 {
+    display: all;
+  }
+  .home-text {
+    display: none;
+  }
+  .home-displayname {
+    font-size: 0.88em;
+  }
+}
