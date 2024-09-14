@@ -738,6 +738,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     function activatePage() {
       document.getElementById("loader").style.display = "none";
       document.getElementById("loaderbg").style.display = "none";
+      document.getElementById("loader").style["z-index"] = -5;
+      document.getElementById("loaderbg").style["z-index"] = -5;
     };
 
     activate();
