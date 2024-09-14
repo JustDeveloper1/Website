@@ -176,6 +176,17 @@ SOFTWARE.
         width: 100%;
         height: 100%;
       }
+      .a {
+	      width: 100%;
+    height:100%;
+position: fixed;
+    z-index: 3;
+	      background: rgb(255,255,255);
+background: -moz-radial-gradient(circle, rgba(255,255,255,0) 74%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(255,255,255,0) 74%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgba(255,255,255,0) 74%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+      }
     </style>
     <script src="/js/confetti.js"></script>
   </head>
@@ -187,7 +198,7 @@ SOFTWARE.
 		    You need to enable JavaScript in your browser settings to access this website.
 	    </span>
     </noscript>
-    <span id="fps" style="position: absolute; top: 100%; transform: translate(0%, -100%); color: #FFFFFF; opacity: 75%; margin-left: 5px; margin-bottom: 5px; display: none;">--.- FPS</span></div>
+    <span id="fps" style="position: absolute; top: 100%; transform: translate(0%, -100%); color: #FFFFFF; opacity: 75%; margin-left: 5px; margin-bottom: 5px; display: none; z-index: 4;">--.- FPS</span></div>
     <link rel="stylesheet" href="./css/style1.css" />
     <div id="content" style="-webkit-user-select: none; -ms-user-select: none; user-select: none;">
       <link href="./css/style2.css" rel="stylesheet" />
