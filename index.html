@@ -46,12 +46,14 @@ SOFTWARE.
       border-top: 5px solid #6e3bf3;
       -webkit-animation: spin 1.5s linear infinite;
       animation: spin 1.5s linear infinite;
+	    transition-duration: 0.5s;
     }
     #loaderbg {
     	position: absolute;
     	background-color: #000040;
         width: 100%;
-        height: 100%
+        height: 100%;
+	    transition-duration: 0.5s;
     }
 
     @-webkit-keyframes spin {
@@ -718,11 +720,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
       something = setTimeout(showPage, 3000);
     };
 
-    function showPage() {
+    function showPage() {/*
       document.getElementById("loader").style.display = "none";
-      document.getElementById("loaderbg").style.display = "none";
+      document.getElementById("loaderbg").style.display = "none";*/
       document.getElementById("content").style.display = "block";
       document.getElementById("fps").style.display = "block";
+      document.getElementById("loader").style.opacity = 0;
+      document.getElementById("loaderbg").style.opacity = 0;
+	    otherthng = setTimeout(activatePage, 500);
+    };
+    function activatePage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("loaderbg").style.display = "none";
     };
 
     activate();
