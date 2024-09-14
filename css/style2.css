@@ -708,6 +708,7 @@
 }
 .transition-debug {
   transition-delay: 0ms;
+  background-color: rgba(0,0,0,0);
 }
 .always-button {
   pointer-events: all;
