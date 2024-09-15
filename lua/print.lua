@@ -1,1 +1,1 @@
-warn("Hello there!")
+--print("Hello there!")
