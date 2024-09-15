@@ -471,6 +471,12 @@ SOFTWARE.
     </script>
     <script src="/js/bg.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/lua/print.lua"></script>
+    <script>
+	    window.addEventListener('click', function (evt) {
+    		if (evt.detail === 3) {
+       			print('Hello there!');
+    		}
+	    });
+    </script>
   </body>
 </html>
