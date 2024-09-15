@@ -288,7 +288,7 @@ SOFTWARE.
                 <br class="home-text16" />
               </span>
               <div class="home-information">
-                <div class="home-languages">
+                <div class="home-languages" id="langs">
                   <h1 class="home-lang-heading">
                     <span>Languages:</span>
                     <br />
@@ -818,6 +818,8 @@ if (tipid === 1) {
 }
 	    if (!window.chrome) {
     document.getElementById("skills").style.display = "none";
+		    document.getElementById("langs").style.width = "100%";
+		    document.getElementById("langs").style["border-width"] = "0px";
 }
     </script>
   </body>
