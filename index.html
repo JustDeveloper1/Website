@@ -291,7 +291,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
               <span class="home-description">
                 <span class="home-text14">
                   A beginner Front-End and Roblox developer, 
-			<img style="display:inline-block; width:20px; height:20px; position:relative; top:50%; transform:translate(0%,17%);" src="https://juststudio.is-a.dev/img/logo-200h.png">
+			<img style="display:inline-block; width:20px; height:20px; position:relative; top:50%; transform:translate(0%,17%);" src="img/1726394910.848669-849CF4A7-CA27-442D-8A4E-284433936A51.png">
 			"
                 </span>
                 <a
@@ -299,9 +299,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
                   target="_blank"
                   rel="noreferrer noopener"
                   class="home-link3 always-button"
-                >
+                ><span style="color:#6e3bf3; margin-left:-4px; margin-right:-4px;">
                   JustStudio.
-                </a>
+		</span></a>
                 <span class="home-text15">" founder and owner.</span>
                 <br class="home-text16" />
               </span>
@@ -425,6 +425,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
                     </div>
                   </div>
                 </div>
+		      <span style="position:fixed; bottom:0%;right:0%; color:rgba(255,255,255,0.25); margin-right:1.2em; font-size:0.575em; transform: translate(0%, 5%);" id="tip">Tip: Click on any language!</span>
               </div>
 <!--              <a href="#" onclick="setTimeout(function(){var ww = window.open(window.location, '_self'); ww.close(); }, 1000);"><span id="close" class="home-close" style="cursor:pointer;">x</span></a>		-->
             </div>
@@ -776,6 +777,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
       document.getElementById('cbtn7').addEventListener('click', launchConfetti);
       document.getElementById('cbtn8').addEventListener('click', launchConfetti);
       document.getElementById('cbtn9').addEventListener('click', launchConfetti);
+
+	    const tipid = Math.floor(Math.random() * 3) + 1;
+if (tipid === 1) {
+    document.getElementById('tip').innerHTML = "Tip: Click on any language!";
+} else if (tipid === 2) {
+    document.getElementById('tip').innerHTML = "Pssst! Try to click on any language!";
+} else {
+    document.getElementById('tip').innerHTML = "Click on any language!";
+}
     </script>
   </body>
 </html>
