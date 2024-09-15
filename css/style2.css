@@ -773,3 +773,20 @@
 .home-window-max-size:hover::after {
     opacity: 0.8;
 }
+
+canvas {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+      .a {
+	      width: 100%;
+    height:100%;
+position: fixed;
+    z-index: 3;
+	      background: rgb(255,255,255);
+background: -moz-radial-gradient(circle, rgba(255,255,255,0) 74%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(255,255,255,0) 74%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgba(255,255,255,0) 74%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+      }
