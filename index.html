@@ -351,7 +351,7 @@ SOFTWARE.
                     </div>
                   </div>
                 </div>
-                <div class="home-skills">
+                <div class="home-skills" id="skills">
                   <h1 class="home-skill-heading">
                     <span>Skills (Roblox):</span>
                     <br />
@@ -815,6 +815,9 @@ if (tipid === 1) {
     document.getElementById('tip').innerHTML = "Pssst! Try to click on any language!";
 } else {
     document.getElementById('tip').innerHTML = "Click on any language!";
+}
+	    if (!window.chrome) {
+    document.getElementById("skills").style.display = "none";
 }
     </script>
   </body>
