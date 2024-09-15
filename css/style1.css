@@ -557,3 +557,71 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+#content {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%;
+}
+
+.juststudio-logo {
+    display:inline-block; 
+    width:20px; 
+    height:20px; 
+    position:relative; 
+    top:50%; 
+    transform:translate(0%,17%);
+    transition-duration: 1s;
+}
+.juststudio-logo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+}
+
+#tip {
+    position:fixed; 
+    bottom:0%;
+    right:0%; 
+    color:rgba(255,255,255,0.25); 
+    margin-right:1.2em; 
+    font-size:0.575em; 
+    transform: translate(0%, 5%);
+    transition-duration: 1s;
+}
+#tip:hover {
+    color:rgba(255,255,255,0.75); 
+}
+
+#fps {
+    position: absolute; 
+    top: 100%; 
+    transform: translate(0%, -100%); 
+    color: #FFFFFF; 
+    opacity: 75%; 
+    margin-left: 5px; 
+    margin-bottom: 5px; 
+    display: none; 
+    z-index: 4; 
+    pointer-events: none;
+}
+
+#purple-image {
+    			  filter: drop-shadow(100000px 100000px #6e3bf3); 
+			      transform:translate(-100000px,-100000px);
+			      -o-filter: drop-shadow(100000px 100000px #6e3bf3); 
+			      -o-transform:translate(-100000px,-100000px);
+			      -ms-filter: drop-shadow(100000px 100000px #6e3bf3); 
+			      -ms-transform:translate(-100000px,-100000px);
+			      -moz-filter: drop-shadow(100000px 100000px #6e3bf3); 
+			      -moz-transform:translate(-100000px,-100000px);
+			      -webkit-filter: drop-shadow(100000px 100000px #6e3bf3); 
+			      -webkit-transform:translate(-100000px,-100000px);
+}
