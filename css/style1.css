@@ -599,17 +599,21 @@ SOFTWARE.
 }
 
 .juststudio-logo {
-    display:inline-block; 
-    width:20px; 
-    height:20px; 
-    position:relative; 
-    top:50%; 
-    transform:translate(0%,17%);
-    transition-duration: 1s;
+	display:inline-block; 
+	width:20px; 
+	height:20px; 
+	position:relative; 
+	top:50%; 
+	-webkit-transform:translate(0%,17%) rotate(0deg);
+	transform:translate(0%,17%) rotate(0deg);
+	transition-duration: 1s;
 }
 .juststudio-logo:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg)
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
+	-webkit-filter: drop-shadow(0px 0px 10px #fff) drop-shadow(0px 0px 2px #6e3bf3);
+	-moz-filter: drop-shadow(0px 0px 10px #fff) drop-shadow(0px 0px 2px #6e3bf3);
+	filter: drop-shadow(0px 0px 10px #fff) drop-shadow(0px 0px 2px #6e3bf3);
 }
 
 #tip {
