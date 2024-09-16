@@ -113,7 +113,7 @@ SOFTWARE.
 }
 .home-avatar:hover {
   filter: hue-rotate(360deg);
-  transform: rotateZ(360deg);
+/*transform: rotateZ(360deg);*/
 }
 .home-name {
   flex: 0 0 auto;
