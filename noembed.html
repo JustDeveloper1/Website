@@ -79,6 +79,11 @@ SOFTWARE.
     }
     </style>
     <script>
+	    if (window.parent.frames.length > 0 && document.referrer.indexOf('justdeveloper.is-a.dev') == -1) {
+    		window.stop();
+	    }
+    </script>
+    <script>
         window.location.href = "https://justdeveloper.is-a.dev/"
     </script>
 </head>
