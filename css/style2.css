@@ -852,6 +852,17 @@ canvas {
   -webkit-animation: 7s window-effect-spin cubic-bezier(0.2, 0, 0.8, 1) infinite;
           animation: 7s window-effect-spin cubic-bezier(0.2, 0, 0.8, 1) infinite;
   opacity: 0.5;
+  display: none;
+}
+@media(max-width: 1250px) {
+  .window-effect::after, .window-effect::before {
+    display: block;
+  }
+}
+@media(max-width: 1100px) {
+  .window-effect::after, .window-effect::before {
+    display: none;
+  }
 }
 .window-effect::before {
   -webkit-transform: scaleX(-100%) rotateZ(180deg);
