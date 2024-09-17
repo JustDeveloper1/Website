@@ -33,56 +33,61 @@ SOFTWARE.
     <link rel="manifest" href="/site.webmanifest">
     <meta name="robots" content="index" />
     <style>
-    #loader {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      z-index: 1000001;
-      width: 60px;
-      height: 60px;
-      margin: -35px 0 0 -35px;
-      border: 5px solid #0F0F4F;
-      border-radius: 50%;
-      border-top: 5px solid #6e3bf3;
-      -webkit-animation: spin 1.5s linear infinite;
-      animation: spin 1s linear infinite;
-	    transition-duration: 0.5s;
-    }
-    #loaderbg {
-    	position: absolute;
-    	background-color: #000040;
-        width: 100%;
-        height: 100%;
-	    z-index: 1000000;
-	    transition-duration: 0.5s;
-    }
+    	#loader {
+      		position: absolute;
+      		left: 50%;
+      		top: 50%;
+      		z-index: 1000001;
+      		width: 60px;
+      		height: 60px;
+      		margin: -35px 0 0 -35px;
+      		border: 5px solid #0F0F4F;
+      		border-radius: 50%;
+      		border-top: 5px solid #6e3bf3;
+      		-webkit-animation: spin 1.5s linear infinite;
+      		animation: spin 1s linear infinite;
+	    	transition-duration: 0.5s;
+    	}
+    	#loaderbg {
+    		position: absolute;
+    		background-color: #000040;
+        	width: 100%;
+        	height: 100%;
+	    	z-index: 1000000;
+	    	transition-duration: 0.5s;
+    	}
 
-    @-webkit-keyframes spin {
-      0% { -webkit-transform: rotate(0deg); }
-      100% { -webkit-transform: rotate(360deg); }
-    }
+    	@-webkit-keyframes spin {
+      		0% { -webkit-transform: rotate(0deg); }
+      		100% { -webkit-transform: rotate(360deg); }
+    	}
 
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    	@keyframes spin {
+      		0% { transform: rotate(0deg); }
+      		100% { transform: rotate(360deg); }
+    	}
 
 
-    @-webkit-keyframes animatebottom {
-      from { bottom:-100px; opacity:0 } 
-      to { bottom:0px; opacity:1 }
-    }
+    	@-webkit-keyframes animatebottom {
+      		from { bottom:-100px; opacity:0 } 
+      		to { bottom:0px; opacity:1 }
+    	}
 
-    @keyframes animatebottom { 
-      from{ bottom:-100px; opacity:0 } 
-      to{ bottom:0; opacity:1 }
-    }
+    	@keyframes animatebottom { 
+      		from{ bottom:-100px; opacity:0 } 
+      		to{ bottom:0; opacity:1 }
+    	}
 
-    #content {
-      display: none;
-      text-align: center;
-    }
-</style>
+    	#content {
+      		display: none;
+      		text-align: center;
+    	}
+    </style>
+    <script>
+	    if (window.parent.frames.length > 0 && document.referrer.indexOf('justdeveloper.is-a.dev') == -1) {
+    		window.stop();
+	    }
+    </script>
     <meta
       name="description"
       content="Lua, Luau, JavaScript, HTML, CSS developer"
