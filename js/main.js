@@ -117,6 +117,7 @@ SOFTWARE.
       document.getElementById('cbtn7').addEventListener('click', launchConfetti);
       document.getElementById('cbtn8').addEventListener('click', launchConfetti);
       document.getElementById('cbtn9').addEventListener('click', launchConfetti);
+      document.getElementById('cbtn10').addEventListener('click', launchConfetti);
 
 	    const tipid = Math.floor(Math.random() * 3) + 1;
 if (tipid === 1) {
