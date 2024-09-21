@@ -36,7 +36,7 @@
 <a href="https://icons8.com/icon/7764/copyright">"Copyright"</a>, <a href="https://icons8.com/icon/Q524h6svpboS/discord-new">"Discord New"</a>, <a href="https://icons8.com/icon/12599/github">"GitHub"</a>, <a href="https://icons8.com/icon/97652/roblox">"Roblox"</a>, "Open-Source" icons by <a href="https://icons8.com">Icons8</a><br>
 >
 > Other:<br>
->> <a href="https://github.com/anuraghazra/github-readme-stats">"GitHub Readme Stats"</a> [by Anurag Hazra](https://github.com/anuraghazra)
+>> <a href="https://github.com/anuraghazra/github-readme-stats">"GitHub Readme Stats"</a> by [Anurag Hazra](https://github.com/anuraghazra)
 </div>
 
 -------
