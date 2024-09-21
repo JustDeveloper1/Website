@@ -644,14 +644,20 @@ SOFTWARE.
 }
 
 #purple-image {
-    			  filter: drop-shadow(100000px 100000px #6e3bf3); 
-			      transform:translate(-100000px,-100000px);
-			      -o-filter: drop-shadow(100000px 100000px #6e3bf3); 
-			      -o-transform:translate(-100000px,-100000px);
-			      -ms-filter: drop-shadow(100000px 100000px #6e3bf3); 
-			      -ms-transform:translate(-100000px,-100000px);
-			      -moz-filter: drop-shadow(100000px 100000px #6e3bf3); 
-			      -moz-transform:translate(-100000px,-100000px);
-			      -webkit-filter: drop-shadow(100000px 100000px #6e3bf3); 
-			      -webkit-transform:translate(-100000px,-100000px);
+    filter: drop-shadow(100000px 100000px #6e3bf3); 
+    transform:translate(-100000px,-100000px);
+    -o-filter: drop-shadow(100000px 100000px #6e3bf3); 
+    -o-transform:translate(-100000px,-100000px);
+    -ms-filter: drop-shadow(100000px 100000px #6e3bf3); 
+    -ms-transform:translate(-100000px,-100000px);
+    -moz-filter: drop-shadow(100000px 100000px #6e3bf3); 
+    -moz-transform:translate(-100000px,-100000px);
+    -webkit-filter: drop-shadow(100000px 100000px #6e3bf3); 
+    -webkit-transform:translate(-100000px,-100000px);
+}
+
+.home-window-pos {
+    animation-name: fadeIn;
+    animation-duration: 777ms;
+    animation-iteration-count: 1;
 }
