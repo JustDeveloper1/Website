@@ -660,4 +660,5 @@ SOFTWARE.
     animation-name: fadeIn;
     animation-duration: 777ms;
     animation-iteration-count: 1;
+    animation-delay: 500ms;
 }
