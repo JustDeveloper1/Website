@@ -15,7 +15,7 @@
 <br>
 <br>
 
-## Funny stuff / Secrets / Easter Eggs: 
+## Fun stuff / Secrets / Easter Eggs: 
 <br/>
 
 **🎉 Click on any language!**<br>
