@@ -37,6 +37,7 @@ Disallow: /license
 Disallow: /readme.md
 Disallow: /*.json$
 Disallow: /*.yml$
+Disallow: /noembed*
 
 User-agent: facebookexternalhit
 Disallow: /
