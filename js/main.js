@@ -136,9 +136,9 @@ if (!window.chrome) {
     document.getElementById("langs").style["border-width"] = "0px";
 }
 
-const currentYear = new Date().getFullYear();
-const copyrightText = document.querySelector('.home-text41');
-copyrightText.innerHTML = `<span>© 2024-${currentYear} JustDeveloper</span><br>`;
+const targets__ = document.querySelectorAll('.home-text41');
+let currentYear = new Date().getFullYear();
+targets__.forEach(t_element => {if (t_element.innerHTML.includes('<span>©')) {t_element.innerHTML = `<span>© 2024-${currentYear} JustDeveloper</span><br>`;}});
 
 fetch('https://api.lanyard.rest/1117482901353812088.png')
     .then(response => {
