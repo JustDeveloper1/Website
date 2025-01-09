@@ -115,7 +115,17 @@ buttonIDs.forEach(buttonId => {document.getElementById(`cbtn${buttonId}`).addEve
 const tips = [
     "Tip: Click on any language!",
     "Pssst! Try to click on any language!",
-    "Click on any language!"
+    "Click on any language!",
+    'Type "github"!',
+    'Tip: Try to type "github"!',
+    "Hey there! Reload the page to see here another random message!",
+    `Please <a href="https://github.com/JustDeveloper1/Website" style="text-decoration: underline;">star</a> this website's github repo!`,
+    `Hands up! Please <a href="https://github.com/JustDeveloper1/Website" style="text-decoration: underline;">star</a> this website's github repo!`,
+    "console.log('Hello, JavaScript!')",
+    'print("Hello, Lua!")',
+    "Please visit https://juststudio.is-a.dev/",
+    //"Please visit https://codeshare.js.org/",
+    "Did you know? This is a random message! Reload the page to see another one!"
 ];
 const tipid = Math.floor(Math.random() * tips.length);
 document.getElementById('tip').innerHTML = tips[tipid];
@@ -127,7 +137,7 @@ if (!window.chrome) {
 }
 
 const currentYear = new Date().getFullYear();
-const copyrightText = document.querySelector('.home-text41').src;
+const copyrightText = document.querySelector('.home-text41');
 copyrightText.innerHTML = `<span>© 2024-${currentYear} JustDeveloper</span><br>`;
 
 fetch('https://api.lanyard.rest/1117482901353812088.png')
