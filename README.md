@@ -8,7 +8,7 @@
 <br>
 
 **🛠️ Website made by JustDeveloper** `[lmao]`<br>
-**✅ Copyright (c) 2024 [JustDeveloper](https://justdeveloper.is-a.dev/) <[`https://justdeveloper.is-a.dev/`](https://justdeveloper.is-a.dev/)>**<br>
+**✅ Copyright (c) 2024-2025 [JustDeveloper](https://justdeveloper.is-a.dev/) <[`https://justdeveloper.is-a.dev/`](https://justdeveloper.is-a.dev/)>**<br>
 **[📜 Licensed under the MIT license](https://github.com/JustDeveloper1/Website/blob/main/LICENSE) - http://opensource.org/licenses/MIT**<br>
 
 ------
