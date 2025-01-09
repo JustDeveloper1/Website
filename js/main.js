@@ -2,7 +2,7 @@
 
 MIT License
 
-Copyright (c) 2024 JustDeveloper <https://justdeveloper.is-a.dev/>
+Copyright (c) 2024-2025 JustDeveloper <https://justdeveloper.is-a.dev/>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,111 +25,122 @@ SOFTWARE.
 */
 
 
-	    var fps = document.getElementById("fps");
-		var startTime = Date.now();
-		var frame = 0;
+var fps = document.getElementById("fps");
+var startTime = Date.now();
+var frame = 0;
 
-		function tick() {
-			  var time = Date.now();
-			  var removed = 0;
-			  frame++;
-			  if (time - startTime > 1000) {
-			      fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1) + ' FPS';
-				  if ( (frame / ((time - startTime) / 1000)).toFixed(0) < 20 ) {
-					  if ( removed > 2 ) {
-						  document.getElementById("bg-effect").style.display = "none";
-					  }
-					  document.getElementById("content").style["pointer-events"] = "none"
-					  document.getElementById("fps").style.color = "rgb(255, 0, 0)"; document.getElementById("fps").style.opacity = "100%"; document.getElementById("fps").style["font-weight"] = "bold"; 
-            			          removed++;
-					  setTimeout(() => {
-					    	document.getElementById("content").style["pointer-events"] = "all";
-						  document.getElementById("fps").style.color = "rgb(255, 255, 255)"; document.getElementById("fps").style.opacity = "75%"; document.getElementById("fps").style["font-weight"] = "regular"
- 				          }, 3000);
-				  }
-			      startTime = time;
-			      frame = 0;
-				}
-				  window.requestAnimationFrame(tick);
-				}
-			tick();
+function tick() {
+    var time = Date.now();
+    var removed = 0;
+    frame++;
+    if (time - startTime > 1000) {
+        fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1) + ' FPS';
+        if ((frame / ((time - startTime) / 1000)).toFixed(0) < 20) {
+            if (removed > 2) {
+                document.getElementById("bg-effect").style.display = "none";
+            }
+            document.getElementById("content").style["pointer-events"] = "none"
+            document.getElementById("fps").style.color = "rgb(255, 0, 0)";
+            document.getElementById("fps").style.opacity = "100%";
+            document.getElementById("fps").style["font-weight"] = "bold";
+            removed++;
+            setTimeout(() => {
+                document.getElementById("content").style["pointer-events"] = "all";
+                document.getElementById("fps").style.color = "rgb(255, 255, 255)";
+                document.getElementById("fps").style.opacity = "75%";
+                document.getElementById("fps").style["font-weight"] = "regular"
+            }, 3000);
+        }
+        startTime = time;
+        frame = 0;
+    }
+    window.requestAnimationFrame(tick);
+}
+tick();
 
 
 
 
-    var something;
+var something;
 
-    function activate() {
-      something = setTimeout(showPage, 2500);
-    };
+function activate() {
+    something = setTimeout(showPage, 2500);
+};
 
-    function showPage() {/*
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("loaderbg").style.display = "none";*/
-      document.getElementById("content").style.display = "block";
-      document.getElementById("fps").style.display = "block";
-      document.getElementById("loader").style.opacity = 0;
-      /*document.getElementById("loaderbg").style.opacity = 0;*/
-	    otherthng = setTimeout(showPage02, 500);
-    };
-    function showPage02() {
-      document.getElementById("loaderbg").style.opacity = 0;
-	    otherthng = setTimeout(activatePage, 500);
-    };
-    function activatePage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("loaderbg").style.display = "none";
-      document.getElementById("loader").style["z-index"] = -5;
-      document.getElementById("loaderbg").style["z-index"] = -5;
-      document.getElementById("loader").remove()
-      document.getElementById("loaderbg").remove()
-    };
+function showPage() {
+    document.getElementById("content").style.display = "block";
+    document.getElementById("fps").style.display = "block";
+    document.getElementById("loader").style.opacity = 0;
+    otherthng = setTimeout(showPage02, 500);
+};
 
-    activate();
+function showPage02() {
+    document.getElementById("loaderbg").style.opacity = 0;
+    otherthng = setTimeout(activatePage, 500);
+};
 
-    function clickHandler(){
-      window.handler = self;
-      window.close();
-    };/*
-    var element = document.getElementById('close');
-    element.style.display = "none";
-    element.addEventListener('click', clickHandler);
-*/
+function activatePage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loaderbg").style.display = "none";
+    document.getElementById("loader").style["z-index"] = -5;
+    document.getElementById("loaderbg").style["z-index"] = -5;
+    document.getElementById("loader").remove()
+    document.getElementById("loaderbg").remove()
+};
 
-      function randomInRange(min, max) {
-        return Math.random() * (max - min) + min;
-      }
+activate();
 
-      function launchConfetti() {
-        confetti({
+function clickHandler() {
+    window.handler = self;
+    window.close();
+};
+
+function randomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+function launchConfetti() {
+    confetti({
         angle: randomInRange(55, 125),
         spread: randomInRange(50, 70),
         particleCount: randomInRange(50, 100),
-        origin: { y: 1 },
-      });
-      }
-      document.getElementById('cbtn1').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn2').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn3').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn4').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn5').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn6').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn7').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn8').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn9').addEventListener('click', launchConfetti);
-      document.getElementById('cbtn10').addEventListener('click', launchConfetti);
+        origin: {
+            y: 1
+        },
+    });
+}
+const buttonIDs = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+buttonIDs.forEach(buttonId => {document.getElementById(`cbtn${buttonId}`).addEventListener('click', launchConfetti);});
 
-	    const tipid = Math.floor(Math.random() * 3) + 1;
-if (tipid === 1) {
-    document.getElementById('tip').innerHTML = "Tip: Click on any language!";
-} else if (tipid === 2) {
-    document.getElementById('tip').innerHTML = "Pssst! Try to click on any language!";
-} else {
-    document.getElementById('tip').innerHTML = "Click on any language!";
-}
-	    if (!window.chrome) {
+const tips = [
+    "Tip: Click on any language!",
+    "Pssst! Try to click on any language!",
+    "Click on any language!"
+];
+const tipid = Math.floor(Math.random() * tips.length);
+document.getElementById('tip').innerHTML = tips[tipid];
+
+if (!window.chrome) {
     document.getElementById("skills").style.display = "none";
-		    document.getElementById("langs").style.width = "100%";
-		    document.getElementById("langs").style["border-width"] = "0px";
+    document.getElementById("langs").style.width = "100%";
+    document.getElementById("langs").style["border-width"] = "0px";
 }
-    
+
+const currentYear = new Date().getFullYear();
+const copyrightText = document.querySelector('.home-text41').src;
+copyrightText.innerHTML = `<span>© 2024-${currentYear} JustDeveloper</span><br>`;
+
+fetch('https://api.lanyard.rest/1117482901353812088.png')
+    .then(response => {
+        if (response.ok) {
+            return response.blob();
+        }
+        throw new Error('Network response was not ok.');
+    })
+    .then(imageBlob => {
+        const imageObjectURL = URL.createObjectURL(imageBlob);
+        document.querySelector('.home-avatar').src = imageObjectURL;
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
