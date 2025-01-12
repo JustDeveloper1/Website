@@ -154,3 +154,17 @@ fetch('https://api.lanyard.rest/1117482901353812088.png')
     .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
     });
+
+document.getElementById('works-btn').addEventListener('click', function() {
+    document.querySelector('.win1').style.transform = 'translate(-200%, 0%)';
+    document.querySelector('.win1').style['-webkit-transform'] = 'translate(-200%, 0%)';
+    document.querySelector('.win2').style.transform = 'translate(-200%, 0%)';
+    document.querySelector('.win2').style['-webkit-transform'] = 'translate(-200%, 0%)';
+});
+
+document.getElementById('back-btn').addEventListener('click', function() {
+    document.querySelector('.win1').style.transform = '';
+    document.querySelector('.win1').style['-webkit-transform'] = '';
+    document.querySelector('.win2').style.transform = '';
+    document.querySelector('.win2').style['-webkit-transform'] = '';
+});
