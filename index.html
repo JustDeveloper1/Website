@@ -2,7 +2,7 @@
 
 MIT License
 
-Copyright (c) 2024 JustDeveloper <https://justdeveloper.is-a.dev/>
+Copyright (c) 2024-2025 JustDeveloper <https://justdeveloper.is-a.dev/>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,8 @@ SOFTWARE.
 \-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>👋Hi, i`m JustDeveloper!</title>
     <meta name="title" content="JustDeveloper">
     <meta name="keywords" content="JustDeveloper,JustStudio,Lua,Luau,HTML,CSS,JavaScript,TypeScript,Developer">
@@ -36,159 +37,246 @@ SOFTWARE.
     <link rel="manifest" href="/site.webmanifest">
     <meta name="robots" content="index" />
     <style>
-    	#loader {
-      		position: absolute;
-      		left: 50%;
-      		top: 50%;
-      		z-index: 1000001;
-      		width: 60px;
-      		height: 60px;
-      		margin: -35px 0 0 -35px;
-      		border: 5px solid #0F0F4F;
-      		border-radius: 50%;
-      		border-top: 5px solid #6e3bf3;
-      		-webkit-animation: spin 1.5s linear infinite;
-      		animation: spin 1s linear infinite;
-	    	transition-duration: 0.5s;
-    	}
-    	#loaderbg {
-    		position: absolute;
-    		background-color: #000040;
-        	width: 100%;
-        	height: 100%;
-	    	z-index: 1000000;
-	    	transition-duration: 0.5s;
-    	}
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1000001;
+            width: 60px;
+            height: 60px;
+            margin: -35px 0 0 -35px;
+            border: 5px solid #0F0F4F;
+            border-radius: 50%;
+            border-top: 5px solid #6e3bf3;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1s linear infinite;
+            transition-duration: 0.5s;
+        }
 
-    	@-webkit-keyframes spin {
-      		0% { -webkit-transform: rotate(0deg); }
-      		100% { -webkit-transform: rotate(360deg); }
-    	}
+        #loaderbg {
+            position: absolute;
+            background-color: #000040;
+            width: 100%;
+            height: 100%;
+            z-index: 1000000;
+            transition-duration: 0.5s;
+        }
 
-    	@keyframes spin {
-      		0% { transform: rotate(0deg); }
-      		100% { transform: rotate(360deg); }
-    	}
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
 
-    	@-webkit-keyframes animatebottom {
-      		from { bottom:-100px; opacity:0 } 
-      		to { bottom:0px; opacity:1 }
-    	}
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
 
-    	@keyframes animatebottom { 
-      		from{ bottom:-100px; opacity:0 } 
-      		to{ bottom:0; opacity:1 }
-    	}
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
 
-    	#content {
-      		display: none;
-      		text-align: center;
-    	}
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        #content {
+            display: none;
+            text-align: center;
+        }
     </style>
     <script>
-	    if (window.parent.frames.length > 0 && document.referrer.indexOf('justdeveloper.is-a.dev') == -1) {
-    		window.stop();
-	    }
+        if (window.parent.frames.length > 0 && document.referrer.indexOf('justdeveloper.is-a.dev') == -1) {
+            window.stop();
+        }
     </script>
-    <meta
-      name="description"
-      content="Lua, Luau, JavaScript, HTML, CSS, TypeScript developer"
-    />
+    <meta name="description" content="Lua, Luau, JavaScript, HTML, CSS, TypeScript developer" />
     <meta property="og:title" content="JustDeveloper" />
-    <meta
-      property="og:description"
-      content="Lua, Luau, JavaScript, HTML, CSS, TypeScript developer"
-    />
+    <meta property="og:description" content="Lua, Luau, JavaScript, HTML, CSS, TypeScript developer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+        html {
+            line-height: 1.15;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        p,
+        li,
+        ul,
+        pre,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        figure,
+        blockquote,
+        figcaption {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: transparent;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+
+        button:-moz-focus,
+        [type="button"]:-moz-focus,
+        [type="reset"]:-moz-focus,
+        [type="submit"]:-moz-focus {
+            outline: 1px dotted ButtonText;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        input {
+            padding: 2px 4px;
+        }
+
+        img {
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
     </style>
     <style data-tag="default-style-sheet">
-      html {
-        font-family: "Rubik";
-        font-size: 16px;
-      }
+        html {
+            font-family: "Rubik";
+            font-size: 16px;
+        }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background-color: var(--dl-color-theme-neutral-light);
+        body {
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-theme-neutral-dark);
+            background-color: var(--dl-color-theme-neutral-light);
 
-        fill: var(--dl-color-theme-neutral-dark);
-      }
+            fill: var(--dl-color-theme-neutral-dark);
+        }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
     <script type="text/javascript">
-      let time = 0;
+        let time = 0;
 
-      const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+        const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-      const run = async () => {
-          while (true) {
-              time += 1;
-              await wait(1000);
-          }
-      };
-
-      run();
-	    
-      let title = document.title
-      window.addEventListener('blur', () => {
-          document.title = "🛠️JustDeveloper";
-      })
-      window.addEventListener('focus', () => {
-          document.title = title;
-          setTimeout(() => {
-	    if (time >= 100) {
-       	         window.location.href = window.location.href;
+        const run = async () => {
+            while (true) {
+                time += 1;
+                await wait(1000);
             }
-          }, 30);
-      })
+        };
+
+        run();
+
+        let title = document.title
+        window.addEventListener('blur', () => {
+            document.title = "🛠️JustDeveloper";
+        })
+        window.addEventListener('focus', () => {
+            document.title = title;
+            setTimeout(() => {
+                if (time >= 100) {
+                    window.location.href = window.location.href;
+                }
+            }, 30);
+        })
     </script>
     <script src="/js/confetti.js"></script>
-  </head>
-  <body style="background-color: #000000;">
+</head>
+
+<body style="background-color: #000000;">
     <div id="loader"></div>
     <div id="loaderbg"></div>
-<!--	  <div class="a"></div> \-->
+    <!--	  <div class="a"></div> \-->
     <noscript>
-	    <span style="
+        <span style="
 		    position: absolute; 
 		    top: 50%; 
 		    left: 50%; 
@@ -207,290 +295,343 @@ SOFTWARE.
 		    backdrop-filter: blur(4px); 
 		    box-shadow: 2px 2px 5px 0px #FFFFFF;
 		    ">
-		    You need to enable JavaScript in your browser settings to access this website.
-	    </span>
+            You need to enable JavaScript in your browser settings to access this website.
+        </span>
     </noscript>
     <span id="fps">--.- FPS</span></div>
     <link rel="stylesheet" href="./css/style1.css" />
     <div id="content">
-      <link href="./css/style2.css" rel="stylesheet" />
-      <div class="home-container">
-        <canvas id="bg-effect" style="opacity: 75%;z-index:4;"></canvas>
-        <div class="home-window-pos" style="z-index:4;">
-          <div class="home-window-max-size thq-flex-column">
-            <div class="home-window">
-              <h1 class="home-text">
-                <span>👋 Hello! I am</span>
-                <br />
-              </h1>
-              <div class="home-head">
-                <img
-                  alt="JustDeveloper`s Avatar"
-                  src="public/1726390084.5701818-E8B141F3-6144-4F4B-9A94-FA7C289DC056.png"
-                  class="home-avatar"
-                />
-                <div class="home-name">
-                  <h1 class="home-displayname">
-                    <span>JustDeveloper</span>
-                    <br />
-                  </h1>
-                  <div class="home-buttons">
-                    <a
-                      href="https://www.roblox.com/users/1296091692/profile"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="home-link always-button"
-                    >
-                      <div class="home-roblox transition-debug always-button">
-                        <img
-                          alt="Roblox Profile"
-                          src="public/roblox.svg"
-                          class="home-logo"
-                        />
-                        <span class="home-text05 window-rbp-button-t1">
-                          <span>@JustDeveloper7</span>
-                          <br>
+        <link href="./css/style2.css" rel="stylesheet" />
+        <div class="home-container">
+            <canvas id="bg-effect" style="opacity: 75%;z-index:4;"></canvas>
+            <div class="home-window-pos win1" style="z-index:4;">
+                <div class="home-window-max-size thq-flex-column">
+                    <div class="home-window">
+                        <h1 class="home-text">
+                            <span>👋 Hello! I am</span>
+                            <br>
+                        </h1>
+                        <div class="home-head">
+                            <img alt="JustDeveloper`s Avatar" src="blob:https://justdeveloper.is-a.dev/9966799c-e44e-446f-ae08-08552c9306f8" class="home-avatar">
+                            <div class="home-name">
+                                <h1 class="home-displayname">
+                                    <span>JustDeveloper</span>
+                                    <br>
+                                </h1>
+                                <div class="home-buttons">
+                                    <a href="https://www.roblox.com/users/1296091692/profile" target="_blank" rel="noreferrer noopener" class="home-link always-button">
+                                        <div class="home-roblox transition-debug always-button">
+                                            <img alt="Roblox Profile" src="public/roblox.svg" class="home-logo">
+                                            <span class="home-text05 window-rbp-button-t1">
+                                                <span>@JustDeveloper7</span>
+                                                <br>
+                                            </span>
+                                            <span class="home-text05 window-rbp-button-t2">
+                                                <span>Profile</span>
+                                                <br>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/JustDeveloper1" target="_blank" rel="noreferrer noopener" class="home-link1 always-button">
+                                        <div class="home-git-hub transition-debug always-button">
+                                            <img alt="Github Profile" src="public/github.svg" class="home-logo01">
+                                            <span class="home-text08">
+                                                <span>@JustDeveloper1</span>
+                                                <br>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="https://discord.com/users/1117482901353812088" target="_blank" rel="noreferrer noopener" class="home-link2 always-button">
+                                        <div class="home-discord transition-debug always-button">
+                                            <img alt="Discord Profile" src="public/discord.svg" class="home-logo02">
+                                            <span class="home-text11">
+                                                <span>@justdeveloper</span>
+                                                <br>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="home-description">
+                            <span class="home-text14">
+                                A beginner Front-End and Roblox developer,
+                                <img class="juststudio-logo" src="img/1726394910.848669-849CF4A7-CA27-442D-8A4E-284433936A51.png">
+                                "
+                            </span>
+                            <a href="https://juststudio.is-a.dev/" target="_blank" rel="noreferrer noopener" class="home-link3 always-button"><span style="color:#6e3bf3; margin-left:-4px; margin-right:-4px;">
+                                    JustStudio.
+                                </span></a>
+                            <span class="home-text15">" founder and owner.</span>
+                            <br class="home-text16">
                         </span>
-			<span class="home-text05 window-rbp-button-t2">
-                          <span>Profile</span>
-                          <br>
-                        </span>
-                      </div>
-                    </a>
-                    <a
-                      href="https://github.com/JustDeveloper1"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="home-link1 always-button"
-                    >
-                      <div class="home-git-hub transition-debug always-button">
-                        <img
-                          alt="Github Profile"
-                          src="public/github.svg"
-                          class="home-logo01"
-                        />
-                        <span class="home-text08">
-                          <span>@JustDeveloper1</span>
-                          <br />
-                        </span>
-                      </div>
-                    </a>
-                    <a
-                      href="https://discord.com/users/1117482901353812088"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="home-link2 always-button"
-                    >
-                      <div class="home-discord transition-debug always-button">
-                        <img
-                          alt="Discord Profile"
-                          src="public/discord.svg"
-                          class="home-logo02"
-                        />
-                        <span class="home-text11">
-                          <span>@justdeveloper</span>
-                          <br />
-                        </span>
-                      </div>
-                    </a>
-                  </div>
+                        <div class="home-information">
+                            <div class="home-languages" id="langs">
+                                <h1 class="home-lang-heading">
+                                    <span>Languages:</span>
+                                    <br>
+                                </h1>
+                                <div class="home-langs">
+                                    <div class="home-lua transition-debug" id="cbtn1">
+                                        <span class="home-name01">
+                                            <span>Lua</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Lua" src="public/lang/lua.svg" class="home-logo03">
+                                    </div>
+                                    <div class="home-luau transition-debug" id="cbtn2">
+                                        <span class="home-name02">
+                                            <span>Luau</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Luau" src="public/lang/luau.svg" class="home-logo04">
+                                    </div>
+                                    <div class="home-html transition-debug" id="cbtn3">
+                                        <span class="home-name03">
+                                            <span>HTML</span>
+                                            <br>
+                                        </span>
+                                        <img alt="HTML" src="public/lang/html.svg" class="home-logo05">
+                                    </div>
+                                    <div class="home-css transition-debug" id="cbtn4">
+                                        <span class="home-name04">
+                                            <span>CSS</span>
+                                            <br>
+                                        </span>
+                                        <img alt="CSS" src="public/lang/css.svg" class="home-logo06">
+                                    </div>
+                                    <div class="home-java-script transition-debug" id="cbtn5">
+                                        <span class="home-name05">
+                                            <span>JavaScript</span>
+                                            <br>
+                                        </span>
+                                        <img alt="JavaScript" src="public/lang/javascript.svg" class="home-logo07" style="border-radius: 5%">
+                                    </div>
+                                    <div class="home-java-script transition-debug" id="cbtn10">
+                                        <span class="home-name05">
+                                            <span>TypeScript</span>
+                                            <br>
+                                        </span>
+                                        <img alt="TypeScript" src="public/lang/typescript.svg" class="home-logo07" style="border-radius: 5%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-skills" id="skills">
+                                <h1 class="home-skill-heading">
+                                    <span>Skills (Roblox):</span>
+                                    <br>
+                                </h1>
+                                <div class="home-sklls">
+                                    <div class="home-scripting transition-debug" id="cbtn6">
+                                        <span class="home-name06">
+                                            <span>Scripting</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Scripting (Lua/Luau)" src="public/from-vanilla-3-for-roblox-stud/script-1500h.png" class="home-logo08" id="purple-image">
+                                    </div>
+                                    <div class="home-gui transition-debug" id="cbtn7">
+                                        <span class="home-name07">
+                                            <span>UI Design</span>
+                                            <br>
+                                        </span>
+                                        <img alt="UI/GUI Design" src="public/from-vanilla-3-for-roblox-stud/guimain-1500h.png" class="home-logo09" id="purple-image">
+                                    </div>
+                                    <div class="home-ru transition-debug" id="cbtn8">
+                                        <span class="home-desc">
+                                            <span>EN to RU</span>
+                                            <br>
+                                        </span>
+                                        <span class="home-name08">
+                                            <span>Translating</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Translating (English to Russian)" src="public/from-vanilla-3-for-roblox-stud/languageservice-1500h.png" class="home-logo10" id="purple-image">
+                                    </div>
+                                    <div class="home-building transition-debug" id="cbtn9">
+                                        <span class="home-name09">
+                                            <span>Building</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Building" src="public/from-vanilla-3-for-roblox-stud/tool-1500h.png" class="home-logo11" id="purple-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span id="tip" style="z-index: 2;">Click on any language!</span>
+                        <div class="window-effect" style="opacity:0.25;"></div>
+                        <div class="home-github transition-debug always-button" style="margin-top: 1em;" id="works-btn">
+
+                            <span class="home-text41">
+                                <span>My works</span>
+                                <br>
+                            </span>
+                        </div>
+
+                    </div>
                 </div>
-              </div>
-              <span class="home-description">
-                <span class="home-text14">
-                  A beginner Front-End and Roblox developer, 
-			<img class="juststudio-logo" src="img/1726394910.848669-849CF4A7-CA27-442D-8A4E-284433936A51.png">
-			"
-                </span>
-                <a
-                  href="https://juststudio.is-a.dev/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="home-link3 always-button"
-                ><span style="color:#6e3bf3; margin-left:-4px; margin-right:-4px;">
-                  JustStudio.
-		</span></a>
-                <span class="home-text15">" founder and owner.</span>
-                <br class="home-text16" />
-              </span>
-              <div class="home-information">
-                <div class="home-languages" id="langs">
-                  <h1 class="home-lang-heading">
-                    <span>Languages:</span>
-                    <br />
-                  </h1>
-                  <div class="home-langs">
-                    <div class="home-lua transition-debug" id="cbtn1">
-                      <span class="home-name01">
-                        <span>Lua</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="Lua"
-                        src="public/lang/lua.svg"
-                        class="home-logo03"
-                      />
-                    </div>
-                    <div class="home-luau transition-debug" id="cbtn2">
-                      <span class="home-name02">
-                        <span>Luau</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="Luau"
-                        src="public/lang/luau.svg"
-                        class="home-logo04"
-                      />
-                    </div>
-                    <div class="home-html transition-debug" id="cbtn3">
-                      <span class="home-name03">
-                        <span>HTML</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="HTML"
-                        src="public/lang/html.svg"
-                        class="home-logo05"
-                      />
-                    </div>
-                    <div class="home-css transition-debug" id="cbtn4">
-                      <span class="home-name04">
-                        <span>CSS</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="CSS"
-                        src="public/lang/css.svg"
-                        class="home-logo06"
-                      />
-                    </div>
-                    <div class="home-java-script transition-debug" id="cbtn5">
-                      <span class="home-name05">
-                        <span>JavaScript</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="JavaScript"
-                        src="public/lang/javascript.svg"
-                        class="home-logo07"
-			style="border-radius: 5%"
-                      />
-                    </div>
-		    <div class="home-java-script transition-debug" id="cbtn10">
-                      <span class="home-name05">
-                        <span>TypeScript</span>
-                        <br>
-                      </span>
-                      <img 
-			alt="TypeScript" 
-			src="public/lang/typescript.svg" 
-			class="home-logo07" 
-			style="border-radius: 5%"
-		      />
-                    </div>
-                  </div>
-                </div>
-                <div class="home-skills" id="skills">
-                  <h1 class="home-skill-heading">
-                    <span>Skills (Roblox):</span>
-                    <br />
-                  </h1>
-                  <div class="home-sklls">
-                    <div class="home-scripting transition-debug" id="cbtn6">
-                      <span class="home-name06">
-                        <span>Scripting</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="Scripting (Lua/Luau)"
-                        src="public/from-vanilla-3-for-roblox-stud/script-1500h.png"
-                        class="home-logo08"
-			id="purple-image"
-                      />
-                    </div>
-                    <div class="home-gui transition-debug" id="cbtn7">
-                      <span class="home-name07">
-                        <span>UI Design</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="UI/GUI Design"
-                        src="public/from-vanilla-3-for-roblox-stud/guimain-1500h.png"
-                        class="home-logo09"
-			id="purple-image"
-                      />
-                    </div>
-                    <div class="home-ru transition-debug" id="cbtn8">
-                      <span class="home-desc">
-                        <span>EN to RU</span>
-                        <br />
-                      </span>
-                      <span class="home-name08">
-                        <span>Translating</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="Translating (English to Russian)"
-                        src="public/from-vanilla-3-for-roblox-stud/languageservice-1500h.png"
-                        class="home-logo10"
-			id="purple-image"
-                      />
-                    </div>
-                    <div class="home-building transition-debug" id="cbtn9">
-                      <span class="home-name09">
-                        <span>Building</span>
-                        <br />
-                      </span>
-                      <img
-                        alt="Building"
-                        src="public/from-vanilla-3-for-roblox-stud/tool-1500h.png"
-                        class="home-logo11"
-    			id="purple-image"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-		    <span id="tip" style="z-index: 2;">Tip: Click on any language!</span>
-		    <div class="window-effect" style="opacity:0.25;"></div>
-          </div>
-        </div>
-      </div>
-        <div class="home-buttons1" style="z-index:4;">
-          <a
-            href="https://github.com/JustDeveloper1/justdeveloper1.github.io"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link4 always-button hide-on-small-screen"
-          >
-            <div class="home-github transition-debug always-button">
-              <img alt="Open-Source" src="public/opensource.svg" class="home-logo12" />
-              <span class="home-text41">
-                <span>This website is open-source</span>
-                <br />
-              </span>
             </div>
-          </a>
-	  <a href="https://github.com/JustDeveloper1/Website/blob/main/LICENSE" target="_blank" rel="noreferrer noopener" class="home-link4 always-button">
-            <div class="home-github transition-debug always-button">
-              <img alt="Copyright" src="public/copyright.svg" class="home-logo12">
-              <span class="home-text41">
-                <span>© 2024 JustDeveloper</span>
-                <br>
-              </span>
+            <div class="home-window-pos win2" style="z-index:4;">
+                <div class="home-window-max-size thq-flex-column">
+                    <div class="home-window win2w">
+                        <h1 class="home-text">
+                            <span></span>
+                            <br>
+                        </h1>
+                        <div class="home-head">
+
+                            <div class="home-name">
+                                <h1 class="home-displayname">
+                                    <span style="font-size: 0.6em;">JustDeveloper`s works</span>
+                                    <br>
+                                </h1>
+
+                            </div>
+                        </div>
+                        <span class="home-description">
+                            <span class="home-text14">w.i.p.</span>
+
+
+                            <br class="home-text16">
+                        </span>
+                        <div class="home-information">
+                            <div class="home-languages" id="langs">
+                                <h1 class="home-lang-heading">
+                                    <span>Languages:</span>
+                                    <br>
+                                </h1>
+                                <div class="home-langs">
+                                    <div class="home-lua transition-debug" id="cbtn1">
+                                        <span class="home-name01">
+                                            <span>Lua</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Lua" src="public/lang/lua.svg" class="home-logo03">
+                                    </div>
+                                    <div class="home-luau transition-debug" id="cbtn2">
+                                        <span class="home-name02">
+                                            <span>Luau</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Luau" src="public/lang/luau.svg" class="home-logo04">
+                                    </div>
+                                    <div class="home-html transition-debug" id="cbtn3">
+                                        <span class="home-name03">
+                                            <span>HTML</span>
+                                            <br>
+                                        </span>
+                                        <img alt="HTML" src="public/lang/html.svg" class="home-logo05">
+                                    </div>
+                                    <div class="home-css transition-debug" id="cbtn4">
+                                        <span class="home-name04">
+                                            <span>CSS</span>
+                                            <br>
+                                        </span>
+                                        <img alt="CSS" src="public/lang/css.svg" class="home-logo06">
+                                    </div>
+                                    <div class="home-java-script transition-debug" id="cbtn5">
+                                        <span class="home-name05">
+                                            <span>JavaScript</span>
+                                            <br>
+                                        </span>
+                                        <img alt="JavaScript" src="public/lang/javascript.svg" class="home-logo07" style="border-radius: 5%">
+                                    </div>
+                                    <div class="home-java-script transition-debug" id="cbtn10">
+                                        <span class="home-name05">
+                                            <span>TypeScript</span>
+                                            <br>
+                                        </span>
+                                        <img alt="TypeScript" src="public/lang/typescript.svg" class="home-logo07" style="border-radius: 5%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-skills" id="skills">
+                                <h1 class="home-skill-heading">
+                                    <span>Skills (Roblox):</span>
+                                    <br>
+                                </h1>
+                                <div class="home-sklls">
+                                    <div class="home-scripting transition-debug" id="cbtn6">
+                                        <span class="home-name06">
+                                            <span>Scripting</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Scripting (Lua/Luau)" src="public/from-vanilla-3-for-roblox-stud/script-1500h.png" class="home-logo08" id="purple-image">
+                                    </div>
+                                    <div class="home-gui transition-debug" id="cbtn7">
+                                        <span class="home-name07">
+                                            <span>UI Design</span>
+                                            <br>
+                                        </span>
+                                        <img alt="UI/GUI Design" src="public/from-vanilla-3-for-roblox-stud/guimain-1500h.png" class="home-logo09" id="purple-image">
+                                    </div>
+                                    <div class="home-ru transition-debug" id="cbtn8">
+                                        <span class="home-desc">
+                                            <span>EN to RU</span>
+                                            <br>
+                                        </span>
+                                        <span class="home-name08">
+                                            <span>Translating</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Translating (English to Russian)" src="public/from-vanilla-3-for-roblox-stud/languageservice-1500h.png" class="home-logo10" id="purple-image">
+                                    </div>
+                                    <div class="home-building transition-debug" id="cbtn9">
+                                        <span class="home-name09">
+                                            <span>Building</span>
+                                            <br>
+                                        </span>
+                                        <img alt="Building" src="public/from-vanilla-3-for-roblox-stud/tool-1500h.png" class="home-logo11" id="purple-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="window-effect" style="opacity:0.25;"></div>
+                        <div class="home-github transition-debug always-button" style="margin-top: 1em; transform: rotateY(0deg); -webkit-transform: rotateY(0deg);" id="back-btn">
+
+                            <span class="home-text41">
+                                <span>Back</span>
+                                <br>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </a>
+            <div class="home-buttons1" style="z-index:4;">
+                <a href="https://github.com/JustDeveloper1/justdeveloper1.github.io" target="_blank" rel="noreferrer noopener" class="home-link4 always-button hide-on-small-screen">
+                    <div class="home-github transition-debug always-button">
+                        <img alt="Open-Source" src="public/opensource.svg" class="home-logo12" />
+                        <span class="home-text41">
+                            <span>This website is open-source</span>
+                            <br />
+                        </span>
+                    </div>
+                </a>
+                <a href="https://github.com/JustDeveloper1/Website/blob/main/LICENSE" target="_blank" rel="noreferrer noopener" class="home-link4 always-button">
+                    <div class="home-github transition-debug always-button">
+                        <img alt="Copyright" src="public/copyright.svg" class="home-logo12">
+                        <span class="home-text41">
+                            <span>© 2024 JustDeveloper</span>
+                            <br>
+                        </span>
+                    </div>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
     <script type="text/javascript">
-      document.ondragstart = noselect;
-      document.onselectstart = noselect;
-      document.oncontextmenu = noselect;
-      function noselect() {return false;}
+        document.ondragstart = noselect;
+        document.onselectstart = noselect;
+        document.oncontextmenu = noselect;
+
+        function noselect() {
+            return false;
+        }
     </script>
     <script src="/js/bg.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/easteregg.js"></script>
-  </body>
+</body>
+
 </html>
