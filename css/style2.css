@@ -1016,3 +1016,7 @@ canvas {
         -webkit-transform: rotateY(-180deg);
     }
 }
+
+.win1, .win2 {
+    transition: 500ms;
+}
