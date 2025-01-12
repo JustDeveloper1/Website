@@ -1004,3 +1004,15 @@ canvas {
         --angle: 270deg;
     }
 }
+
+.win2 {
+    translate: 150% 0%;
+}
+.win2w {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    * {
+        transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+    }
+}
