@@ -109,7 +109,7 @@ function launchConfetti() {
         },
     });
 }
-const buttonIDs = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+const buttonIDs = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 buttonIDs.forEach(buttonId => {document.getElementById(`cbtn${buttonId}`).addEventListener('click', launchConfetti);});
 
 const tips = [
