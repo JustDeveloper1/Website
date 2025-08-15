@@ -13,10 +13,7 @@
       #text {
         font-size: 24px;
         color: #ff7e7e;
-        font-family: monospace;
-      }
-      .yes {
-        color: #7eff7e;
+        font-family: sans-serif;
       }
     </style>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -30,7 +27,7 @@
           var textElement = document.getElementById('text');
           if (textElement) {
             textElement.innerHTML = '✅ This is PS3 browser.';
-            textElememt.classList.add('yes');
+            textElememt.style = 'color: #7eff7e;';
           }
         }
       });
