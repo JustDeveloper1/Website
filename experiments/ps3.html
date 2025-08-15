@@ -4,32 +4,32 @@
     <style>
       body {
         background-color: #000000;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      #text {
         font-size: 24px;
-      }
-      .yes span {
-        color: #7eff7e;
-      }
-      span {
         color: #ff7e7e;
+        font-family: monospace;
+      }
+      .yes {
+        color: #7eff7e;
       }
     </style>
   </head>
   <body>
     <span id="text">❌ This is not PS3 browser.</span>
-
+  
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         if (navigator.userAgent.indexOf("PLAYSTATION 3") >= 0) {
           var textElement = document.getElementById('text');
           if (textElement) {
             textElement.innerHTML = '✅ This is PS3 browser.';
-            document.body.classList.add('yes');
+            textElememt.classList.add('yes');
           }
         }
       });
