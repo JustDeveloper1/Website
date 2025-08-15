@@ -19,15 +19,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <body>
-    <span id="text">❌ This is not PS3 browser.</span>
-  
+    <span id="text">✕ This is not PS3 browser.</span>
+    <noscript>Error: Unable to check: Please enable JavaScript in your browser settings.</noscript>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         if (navigator.userAgent.indexOf("PLAYSTATION 3") >= 0) {
           var textElement = document.getElementById('text');
           if (textElement) {
-            textElement.innerHTML = '✅ This is PS3 browser.';
-            textElememt.style = 'color: #7eff7e;';
+            textElement.innerHTML = '<span style="color: #7eff7e;">✓ This is PS3 browser.</span>';
           }
         }
       });
