@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+/* */
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* main */
+:root {
+    --font-family-main: 'Rubik', sans-serif;
+    --font-family-code: 'Source Code Pro', monospace;
+    --font-family-h135: 'Lexend Zetta', 'Rubik', sans-serif;
+    --font-family-h246: 'Rubik Mono One', 'Rubik', sans-serif;
+    --shadow-color-1: hsla(240deg 40% 25% / 5%);
+    --shadow-color-2: hsla(240deg 40% 25% / 6%);
+    --shadow-offset: 2px;
+}
+body {
+    font-family: var(--font-family-main);
+}
+
+h1, h3, h5 {
+    font-family: var(--font-family-h135);
+}
+h2, h4, h6 {
+    font-family: var(--font-family-h246);
+}
+
+button, .button {
+	display: block;
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 0;
+	width: 100px;
+	padding: 12px 0;
+	background-image: linear-gradient(to bottom, hsl(240deg 15% 99%), hsl(240deg 10% 95%));
+	margin: 20px 20px;
+	box-shadow: inset 0 0 0 var(--shadow-offset) white, -32px 4px 16px -4px var(--shadow-color-1), 32px 4px 16px -4px var(--shadow-color-1), 0 8px 12px var(--shadow-color-2), 0 12px 32px var(--shadow-color-2);
+
+	font-family: var(--font-family-main);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	position: relative;
+
+    user-select: none;
+}
+button::before, button::after, .button::before, .button::after {
+    content: '';
+    top: 0;
+    bottom: 0;
+    display: block;
+    height: 44px;
+    aspect-ratio: 1 / 1.3;
+    -webkit-mask: paint(smooth-corners);
+    mask: paint(smooth-corners);
+    background: inherit;
+    position: absolute;
+    transform: translateZ(0);
+    box-shadow: inset 0 0 0 2px white;
+    --smooth-corners: 5.0;
+}
+button::before, .button::before {
+    left: -20px;
+    clip-path: inset(-2px 25% -2px -2px);
+    border-radius: 16px 0 0 16px;
+}
+button::after, .button::after {
+    right: -20px;
+    clip-path: inset(-2px -2px -2px 25%);
+    border-radius: 0 16px 16px 0;
+}
+
+.s {
+    filter: sepia(0.2) hue-rotate(200deg);
+    -webkit-filter: sepia(0.2) hue-rotate(200deg);
+}
+button[type="reset"] {
+    filter: sepia(0.2) hue-rotate(240deg);
+    -webkit-filter: sepia(0.2) hue-rotate(240deg);
+    color: rgb(47, 255, 57);
+}
+button[type="submit"], select {
+    filter: sepia(0.2) hue-rotate(200deg);
+    -webkit-filter: sepia(0.2) hue-rotate(200deg);
+    color: rgb(255, 147, 105);
+}
+
+button:disabled, select:disabled, .button:has(:disabled) {
+    cursor: not-allowed;
+    --shadow-color-1: hsla(240deg 40% 25% / 3%);
+    --shadow-color-2: hsla(240deg 40% 25% / 4%);
+}
+
+button[type="reset"]:disabled {
+    color: rgb(111, 255, 118);
+}
+button[type="submit"]:disabled, select:disabled {
+    color: rgb(255, 188, 162);
+}
+
+button:not(:disabled):not(:focus-visible):active {
+    filter: brightness(0.95);
+    -webkit-filter: brightness(0.95);
+}
+button[type="reset"]:not(:disabled):not(:focus-visible):active {
+    filter: sepia(0.2) hue-rotate(240deg) brightness(0.95);
+    -webkit-filter: sepia(0.2) hue-rotate(240deg) brightness(0.95);
+}
+button[type="submit"]:not(:disabled):not(:focus-visible):active {
+    filter: sepia(0.2) hue-rotate(200deg) brightness(0.95);
+    -webkit-filter: sepia(0.2) hue-rotate(200deg) brightness(0.95);
+}
+
+code, pre {
+    font-family: var(--font-family-code);
+    font-size: 13px;
+}
+
+small {
+    font-size: 11px;
+}
+
+blockquote {
+    margin: 0;
+    border-left: 2px solid rgb(172, 172, 172);
+    padding-left: 22px;
+    position: relative;
+}
+
+select {
+    width: calc(100% + calc(14px * 2));
+    z-index: 1;
+    position: absolute;
+    left: -14px;
+    background-color: transparent;
+    border: 2px solid white;
+    height: 22px;
+    padding: 0px 8px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    padding-bottom: 1px;
+    user-select: none;
+}
+.button:has(select) {
+    padding: 0px 5px;
+    height: 22px;
+    margin: 15px;
+    --shadow-offset: 0px;
+    --shadow-color-1: hsla(240deg 40% 25% / 6%);
+    --shadow-color-2: hsla(240deg 40% 25% / 7%);
+}
+.button:has(select)::before, .button:has(select)::after {
+    height: 22px;
+    box-shadow: none;
+}
+.button:has(select)::before {
+    left: -13px;
+}
+.button:has(select)::after {
+    right: -13px;
+}
+option {
+    color: initial;
+}
